@@ -60,23 +60,24 @@
           <p>фильтр:</p>
           <p>цена:</p>
         </div>
-        <div class="manufacturer">
-          <h2>производители</h2>
+        <fieldset class="manufacturer">
+          <legend>производители:</legend>
           <ul>
-            <li><input type="checkbox">bosh</li>
-            <li><input type="checkbox">интерскол</li>
-            <li><input type="checkbox">makita</li>
-            <li><input type="checkbox">dewalt</li>
-            <li><input type="checkbox">hitachi</li>
+            <li><input type="checkbox" name="bosh" checked><label for="bosh">bosh</label></li>
+            <li><input type="checkbox" name="interskol"><label for="интерскол">интерскол</label></li>
+            <li><input type="checkbox" name="makita" checked><label for="makita">makita</label></li>
+            <li><input type="checkbox" name="dewalt"><label for="dewalt">dewalt</label></li>
+            <li><input type="checkbox" name="hitachi"><label for="hitachi">hitachi</label></li>
           </ul>
-        </div>
-        <div class="power">
+        </fieldset>
+        <fieldset class="power">
+          <legend>питание:</legend>
           <ul>
-            <li><input type="checkbox">аккумуляторные</li>
-            <li><input type="checkbox">сетевые</li>
+            <li><input type="radio" name="power" checked><label for="фккумуляторные">аккумуляторные</label></li>
+            <li><input type="radio" name="power"><label for="сетевые">сетевые</label></li>
           </ul>
-        </div>
-        <button type="button"></button>
+        </fieldset>
+        <button type="button">показать</button>
       </div>
       <div class="item-sorting">
         <div class="sort">
@@ -103,6 +104,8 @@
             </li>
             <li>
               <img src="img/item2.jpg" width="218" height="170" alt="изображение перфоратора BOSCH BFG 9600">
+              <button type="button">купить</button>
+              <button type="button">в закладки</button>
               <a href="">
                 <h3>Перфоратор BOSCH BFG 9600</h3>
               </a>
@@ -238,6 +241,12 @@
       </p>
     </div>
   </footer>
+  <div class="modal-basket">
+    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <h2>Товар добавлен в корзину!</h2>
+    <a href="">Оформить заказ</a>
+    <button>Продолжить покупки</button>
+  </div>
 </body>
 
 </html>
