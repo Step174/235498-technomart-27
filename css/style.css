@@ -19,7 +19,7 @@ body {
   background-color: #ba2732;
 }
 
-header {
+.head {
   background-color: #f4f7f9;
 }
 
@@ -54,7 +54,7 @@ header {
   list-style: none;
 }
 
-.main-user li a {
+.main-user a {
   font-size: 17px;
   color: #ffffff;
   text-decoration: none;
@@ -95,19 +95,24 @@ header {
   color: #ee3643;
 }
 
-.contacts a {
+.tel {
   font-size: 21px;
   line-height: 1;
   color: #ee3643;
 }
 
 .contacts p {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: center;
   color: #32425c;
 }
 
-.btn-log {
+ .btn-log {
+  text-decoration: none;
   font-size: 21px;
   line-height: 1;
+  color: #000000;
   border: none;
   background-color: #ffffff;
 }
@@ -129,9 +134,14 @@ header {
 }
 
 .nav li {
-  display: inline;
   list-style: none;
+}
 
+.nav a {
+  font-size: 17px;
+  text-decoration: none;
+  line-height: 1;
+  color: #ffffff;
 }
 
 .nav li:hover {
@@ -142,15 +152,8 @@ header {
   background-color: #1d2739;
 }
 
-.nav li a {
-  font-size: 17px;
-  text-decoration: none;
-  line-height: 1;
-  color: #ffffff;
-}
 
-.nav-item-left h2,
-.nav-item-right h2 {
+.nav-item h2 {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -182,40 +185,40 @@ header {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-item-left div:first-child,
-.nav-item-right div:last-child {
+.nav-1,
+.nav-5 {
   background-color: #ffbf47;
 }
 
-.nav-item-left div:first-child::after {
+.nav-1::after {
   content: url(../img/icon-1.svg);
 }
 
-.nav-item-left div:nth-child(2) {
+.nav-2 {
   background-color: #3bbce3;
 }
 
-.nav-item-left div:nth-child(2)::after {
+.nav-2::after {
   content: url(../img/icon-2.svg);
 }
 
-.nav-item-right div:first-child {
+.nav-3 {
   background-color: #dc91d8;
 }
 
-.nav-item-right div:first-child::after {
+.nav-3::after {
   content: url(../img/icon-3.svg);
 }
 
-.nav-item-right div:nth-child(2) {
+.nav-4 {
   background-color: #8ed78f;
 }
 
-.nav-item-right div:nth-child(2)::after {
+.nav-4::after {
   content: url(../img/icon-4.svg);
 }
 
-.nav-item-right div:last-child::after {
+.nav-5::after {
   content: url(../img/icon-5.svg);
 }
 
@@ -223,6 +226,7 @@ header {
   background-image: url(../img/slide-1.jpg);
   background-size: 620px 266px;
   background-repeat: no-repeat;
+  background-color: lightgray;
 }
 
 .slider h2 {
@@ -238,6 +242,14 @@ header {
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff
+}
+
+.arrow-left::before {
+  content: url(../img/icon-left.svg);
+}
+
+.arrow-right::before {
+  content: url(../img/icon-right.svg);
 }
 
 .slider .btn {
@@ -262,6 +274,7 @@ header {
 .popular-item h2 {
   font-size: 30px;
   line-height: 1;
+  font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -300,7 +313,6 @@ header {
   font-size: 18px;
   font-weight: bold;
   font-size: 18px;
-  font-weight: bold;
   text-align: center;
   color: #000000;
 }
@@ -353,7 +365,7 @@ header {
 }
 
 .products p {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
@@ -385,13 +397,15 @@ header {
 
 .services h2,
 .info-company h2 {
-  font-size: 30px line-height: 1;
+  font-size: 30px;
+  line-height: 1;
   text-transform: uppercase;
+  color: #000000;
 }
 
 .services p,
 .info-company p {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
@@ -402,7 +416,7 @@ header {
 }
 
 
-.services-list li a {
+.services-list a {
   font-size: 21px;
   font-weight: bold;
   line-height: 1.43;
@@ -426,7 +440,7 @@ header {
   line-height: 1.11;
 }
 
-footer {
+.foot {
   background-color: #32425c;
 }
 
@@ -434,19 +448,21 @@ footer li {
   list-style: none;
 }
 
-footer li a {
+.footer-nav a,
+.footer-nav-center a,
+.footer-nav-down a {
   text-decoration: none;
   font-size: 18px;
   line-height: 1.33;
   color: #f1f5f7;
 }
 
-.footer-nav li a:hover,
+.footer-nav a:hover,
 .footer-center a:hover {
   text-decoration: underline;
 }
 
-.footer-nav li a:active,
+.footer-nav a:active,
 .footer-center a:active {
   opacity: 0.5;
   text-decoration: none;
@@ -458,7 +474,7 @@ footer li a {
   text-decoration: none;
 }
 
-.footer-center li a {
+.footer-nav-center a {
   color: #ffd180;
 }
 
@@ -472,7 +488,8 @@ footer li a {
   color: #f1f5f7;
 }
 
-.footer-down p a {
+.mail,
+.dev {
   text-decoration: none;
   color: #ffd180;
 }
@@ -481,7 +498,7 @@ footer li a {
   background-color: #212a3a;
 }
 
-.footer-down li a {
+.footer-nav-down a {
   font-size: 0;
 }
 
@@ -564,16 +581,18 @@ footer li a {
   list-style: none;
 }
 
-.breadcrumbs li a {
+.breadcrumbs a {
   text-decoration: none;
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
   color: #000000;
 }
 
-.breadcrumbs li a:hover {}
+.breadcrumbs a:hover {
+  opacity: 0.7;
+}
 
 .item-heading {
   font-size: 30px;
@@ -583,7 +602,7 @@ footer li a {
 }
 
 .filter-section {
-  font-family: PTSans;
+ font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -597,7 +616,7 @@ fieldset {
 .filter-head,
 .manufacturer legend,
 .power legend {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
@@ -611,7 +630,7 @@ fieldset {
 
 .manufacturer label,
 .power label {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 15px;
   line-height: 1.33;
   text-transform: uppercase;
@@ -622,7 +641,7 @@ fieldset {
   padding-top: 14px;
   padding-bottom: 14px;
   border: solid 1px #e5e5e5;
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -639,7 +658,7 @@ fieldset {
 }
 
 .sort p {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -650,9 +669,9 @@ fieldset {
   list-style: none;
 }
 
-.sort li a {
+.sort-nav a {
   border-bottom: 1px dashed #ee3643;
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -660,9 +679,14 @@ fieldset {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort li a:hover {
+.sort-nav a:hover {
   border-bottom: 1px solid #ee3643;
   color: #000000;
+}
+
+.up,
+.down {
+  font-size: 0;
 }
 
 .pages li {
@@ -671,8 +695,8 @@ fieldset {
   list-style: none;
 }
 
-.pages li a {
-  font-family: PTSans;
+.pages a {
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-align: center;
@@ -697,7 +721,7 @@ fieldset {
 }
 
 .about-item p {
-  font-family: PTSans;
+  font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }

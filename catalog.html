@@ -4,19 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-  <header>
+  <header class="head">
     <div class="header-up">
-      <a>
+      <a href="index.html">
         <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
       </a>
-      <div class="search-style">
+      <form class="search-style">
         <input type="search" tabindex="1" name="q" id="search" placeholder="Поиск:">
-      </div>
+      </form>
       <ul class="main-user">
         <li><a href="">Закладки:0</a></li>
         <li><a href="">Корзина:0</a></li>
@@ -41,7 +42,7 @@
         </div>
       </div>
     </div>
-    <nav>
+    <nav class="header-down">
       <ul class="nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Компания</a></li>
@@ -89,10 +90,12 @@
       <div class="item-sorting">
         <div class="sort">
           <p>сортировка:</p>
-          <ul>
+          <ul class="sort-nav">
             <li><a href="">по цене</a></li>
             <li><a href="">по типу</a></li>
             <li><a href="">по функционалу</a></li>
+            <li><a class="up" href="">по возрастанию</a></li>
+            <li><a class="down" href="">по убыванию</a></li>
           </ul>
           <a href="" class="arrow-up"></a>
           <a href="" class="arrow-down"></a>
@@ -223,7 +226,7 @@
       </p>
     </section>
   </main>
-  <footer>
+  <footer class="foot">
     <div class="footer-up">
       <a href="index.html">
         <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
@@ -240,7 +243,7 @@
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </p>
-      <ul>
+      <ul class="footer-nav-center">
         <li><a href="">Материалы</a></li>
         <li><a href="">Техника</a></li>
         <li><a href="">Инструмент</a></li>
@@ -250,7 +253,7 @@
     <div class="footer-down">
       <p>© 2010–2019 Компания «Техномарт»
         Все права защищены</p>
-      <ul>
+      <ul class="footer-nav-down">
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Инстаграм</a></li>

@@ -10,14 +10,14 @@
 </head>
 
 <body>
-  <header>
+  <header class="head">
     <div class="header-up">
       <a>
         <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
       </a>
-      <div class="search-style">
+      <form class="search-style">
         <input type="search" tabindex="1" name="q" id="search" placeholder="Поиск:">
-      </div>
+      </form>
       <ul class="main-user">
         <li><a href="">Закладки:0</a></li>
         <li><a href="">Корзина:0</a></li>
@@ -29,15 +29,15 @@
         строительных материалов
         и инструментов для ремонта</p>
       <div class="contacts">
-        <a href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <a class="tel" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="login">
-        <button class="btn-log btn-log-in">Войти</button>
-        <button class="btn-log">Регистрация</button>
+        <a href="" class="btn-log btn-log-in">Войти</a>
+        <a href="" class="btn-log">Регистрация</a>
       </div>
     </div>
-    <nav>
+    <nav class="header-down">
       <ul class="nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Компания</a></li>
@@ -52,32 +52,32 @@
   <main>
     <section class="nav-item">
       <div class="nav-item-left">
-        <div>
+        <div class="nav-1">
           <h2>Материалы</h2>
           <a href="">на любой вкус</a>
         </div>
-        <div>
+        <div class="nav-2">
           <h2>Инструмент</h2>
           <a href="">на любой случай</a>
         </div>
         <div class="slider">
           <h2>дрели</h2>
           <p>Соседям на радость</p>
-          <a class="arrow-left"><img src="img/icon-left.svg" alt=""></a>
-          <a class="arrow-right"><img src="img/icon-right.svg" alt=""></a>
+          <a class="arrow-left"></a>
+          <a class="arrow-right"></a>
           <a href="catalog.html" class="btn">открыть каталог</a>
         </div>
       </div>
       <div class="nav-item-right">
-        <div>
+        <div class="nav-3">
           <h2>Техника</h2>
           <a href="">для стройки</a>
         </div>
-        <div>
+        <div class="nav-4">
           <h2>Скидки 50%</h2>
           <a href="">на 350 товаров</a>
         </div>
-        <div>
+        <div class="nav-5">
           <h2>Доставка</h2>
           <a href="">бесплатно</a>
         </div>
@@ -189,11 +189,11 @@
         <p>Вы можете забрать товар сами,
           заехав в наш офис:</p>
         <a class="open-map" href="#"><img src="img/map.png" width="300" height="158" alt="map"></a>
-        <button class="btn" type="button">Заблудились? Напишите нам!</button>
+        <a class="btn" type="button">Заблудились? Напишите нам!</a>
       </section>
     </div>
   </main>
-  <footer>
+  <footer class="foot">
     <div class="footer-up">
       <a>
         <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
@@ -210,7 +210,7 @@
       <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
       </p>
-      <ul>
+      <ul class="footer-nav-center">
         <li><a href="">Материалы</a></li>
         <li><a href="">Техника</a></li>
         <li><a href="">Инструмент</a></li>
@@ -220,7 +220,7 @@
     <div class="footer-down">
       <p class="copyright">© 2010–2019 Компания «Техномарт»
         Все права защищены</p>
-      <ul>
+      <ul class="footer-nav-down">
         <li><a href="#">Вконтакте</a></li>
         <li><a href="#">Фейсбук</a></li>
         <li><a href="#">Инстаграм</a></li>
