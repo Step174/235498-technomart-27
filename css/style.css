@@ -104,6 +104,7 @@ body {
 .contacts p {
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   text-align: center;
   color: #32425c;
 }
@@ -153,15 +154,14 @@ body {
 }
 
 
-.nav-item h2 {
+.offer h2 {
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
   color: #ffffff;
 }
 
-.nav-item-left a,
-.nav-item-right a {
+.offer a {
   display: block;
   width: 135px;
   padding-top: 14px;
@@ -175,50 +175,48 @@ body {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.nav-item-left a:hover,
-.nav-item-right a:hover {
+.offer a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.nav-item-left a:active,
-.nav-item-right a:active {
+.offer a:active {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.nav-1,
-.nav-5 {
+.offer-materials,
+.offer-delivery {
   background-color: #ffbf47;
 }
 
-.nav-1::after {
+.offer-materials::after {
   content: url(../img/icon-1.svg);
 }
 
-.nav-2 {
+.offer-tool {
   background-color: #3bbce3;
 }
 
-.nav-2::after {
+.offer-tool::after {
   content: url(../img/icon-2.svg);
 }
 
-.nav-3 {
+.offer-equipment {
   background-color: #dc91d8;
 }
 
-.nav-3::after {
+.offer-equipment::after {
   content: url(../img/icon-3.svg);
 }
 
-.nav-4 {
+.offer-sale {
   background-color: #8ed78f;
 }
 
-.nav-4::after {
+.offer-sale::after {
   content: url(../img/icon-4.svg);
 }
 
-.nav-5::after {
+.offer-delivery::after {
   content: url(../img/icon-5.svg);
 }
 
@@ -312,7 +310,7 @@ body {
   font-family: PTSans;
   font-size: 18px;
   font-weight: bold;
-  font-size: 18px;
+  line-height: 1.11;
   text-align: center;
   color: #000000;
 }
@@ -596,6 +594,7 @@ footer li {
 
 .item-heading {
   font-size: 30px;
+  font-weight: normal;
   line-height: 1;
   color: #32425c;
   text-transform: uppercase;
@@ -716,6 +715,7 @@ fieldset {
 
 .about-item h2 {
   font-size: 30px;
+  font-weight: normal;
   line-height: 1;
   text-transform: uppercase;
 }
