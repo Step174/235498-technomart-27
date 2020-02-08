@@ -11,20 +11,22 @@
 
 <body>
   <header class="head">
-    <div class="header-up">
-      <a>
-        <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
-      </a>
-      <form class="search-style">
-        <input type="search" tabindex="1" name="q" id="search" placeholder="Поиск:">
-      </form>
-      <ul class="main-user">
-        <li><a href="">Закладки:0</a></li>
-        <li><a href="">Корзина:0</a></li>
-        <li><a class="checkout" href="">Оформить заказ</a></li>
-      </ul>
+    <div class="header-up ">
+      <div class="wrapper">
+        <a>
+          <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
+        </a>
+        <form class="search-style">
+          <input type="search" tabindex="1" name="q" id="search" placeholder="Поиск:">
+        </form>
+        <ul class="main-user">
+          <li><a href="">Закладки:0</a></li>
+          <li><a href="">Корзина:0</a></li>
+          <li><a class="checkout" href="">Оформить заказ</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="header-center">
+    <div class="header-center wrapper">
       <p>Интернет-магазин
         строительных материалов
         и инструментов для ремонта</p>
@@ -37,7 +39,7 @@
         <a href="" class="btn-log">Регистрация</a>
       </div>
     </div>
-    <nav class="header-down">
+    <nav class="header-down wrapper">
       <ul class="nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="">Компания</a></li>
@@ -50,7 +52,7 @@
     </nav>
   </header>
   <main>
-    <section class="nav-item">
+    <section class="nav-item wrapper">
       <div class="nav-item-left">
         <div class="offer offer-materials">
           <h2>Материалы</h2>
@@ -83,11 +85,11 @@
         </div>
       </div>
     </section>
-    <div class="popular-item">
+    <div class="popular-item wrapper">
       <h2>популярные товары:</h2>
       <a class="btn" href="">все популярные товары</a>
     </div>
-    <section class="products">
+    <section class="products wrapper">
       <ul>
         <li>
           <img src="img/item3.jpg" width="218" height="170" alt="перфоратор">
@@ -138,11 +140,11 @@
         </li>
       </ul>
     </section>
-    <div class="popular-item">
+    <div class="popular-item wrapper">
       <h2>популярные производители:</h2>
       <a class="btn" href="">все производители</a>
     </div>
-    <section class="list-producer">
+    <section class="list-producer wrapper">
       <ul>
         <li><a href=""><img src="img/bosch.png" width="126" height="37" alt="bosh"></a></li>
         <li><a href=""><img src="img/makita.png" width="123" height="40" alt="makita"></a></li>
@@ -155,23 +157,25 @@
       </ul>
     </section>
     <div class="services">
-      <h2>Сервисы</h2>
-      <p>Хороший интернет-магазин отличается от плохого не только ценами!
-        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-      <ul class="services-list">
-        <li><a href="">Доставка</a></li>
-        <li><a href="">Гарантия</a></li>
-        <li><a href="">Кредит</a></li>
-      </ul>
-      <article>
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо
-          к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем,
-          поднимая его на ваш этаж!</p>
-      </article>
+      <div class="services-background wrapper">
+        <h2>Сервисы</h2>
+        <p>Хороший интернет-магазин отличается от плохого не только ценами!
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+        <ul class="services-list">
+          <li><a href="">Доставка</a></li>
+          <li><a href="">Гарантия</a></li>
+          <li><a href="">Кредит</a></li>
+        </ul>
+        <article>
+          <h2>Доставка</h2>
+          <p>Мы с удовольствием доставим ваш товар прямо
+            к вашему подъезду совершенно бесплатно!
+            Ведь мы неплохо заработаем,
+            поднимая его на ваш этаж!</p>
+        </article>
+      </div>
     </div>
-    <div class="info-company">
+    <div class="info-company wrapper">
       <section class="about">
         <h2>Компания «Техномарт»</h2>
         <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
@@ -194,6 +198,7 @@
     </div>
   </main>
   <footer class="foot">
+  	<div class="footer-container wrapper">
     <div class="footer-up">
       <a>
         <img class="logo" src="img/logo.svg" width="109" height="19" alt="логотип техномарта">
@@ -234,6 +239,7 @@
         Разработано —
         <a class="dev" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
       </p>
+    </div>
     </div>
   </footer>
   <div class="modal-content">
