@@ -1,4 +1,4 @@
-/*---------ДЛЯ СЕТОК---------*/
+/*---------ДЛЯ СЕТОК---------
 
 header {
   outline: 2px solid yellow;
@@ -39,7 +39,7 @@ footer {
 	outline: 2px solid gray;
 }
 
-/*--------------------------*/
+--------------------------*/
 
 
 
@@ -71,8 +71,6 @@ body {
 }
 
 .head {
-  display: flex;
-  flex-direction: column;
   background-color: #f4f7f9;
 }
 
@@ -552,11 +550,6 @@ body {
 .about li {
   font-size: 18px;
   line-height: 1.11;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
 }
 
 .footer-up,
