@@ -74,18 +74,43 @@
         <fieldset class="manufacturer">
           <legend>производители:</legend>
           <ul>
-            <li><input type="checkbox" name="bosh" id="filter-bosh" checked><label for="filter-bosh">bosh</label></li>
-            <li><input type="checkbox" name="interskol" id="filter-interskol"><label for="filter-interskol">интерскол</label></li>
-            <li><input type="checkbox" name="makita" id="filter-makita" checked><label for="filter-makita">makita</label></li>
-            <li><input type="checkbox" name="dewalt" id="filter-dewalt"><label for="filter-dewalt">dewalt</label></li>
-            <li><input type="checkbox" name="hitachi" id="filter-hitachi"><label for="filter-hitachi">hitachi</label></li>
+            <li><label class="login-checkbox">
+                <input type="checkbox" name="black" checked>
+                <span class="checkbox-indicator"></span> bosch
+              </label></li>
+            <li><label class="login-checkbox">
+                <input type="checkbox" name="black" checked>
+                <span class="checkbox-indicator"></span> интерскол
+              </label></li>
+            <li><label class="login-checkbox">
+                <input type="checkbox" name="black" checked>
+                <span class="checkbox-indicator"></span> makita
+              </label></li>
+            <li><label class="login-checkbox">
+                <input type="checkbox" name="black" checked>
+                <span class="checkbox-indicator"></span> dewalt
+              </label></li>
+            <li><label class="login-checkbox">
+                <input type="checkbox" name="black" checked>
+                <span class="checkbox-indicator"></span> hitachi
+              </label></li>
           </ul>
         </fieldset>
         <fieldset class="power">
           <legend>питание:</legend>
           <ul>
-            <li><input type="radio" name="power" id="filter-battery" checked><label for="filter-battery">аккумуляторные</label></li>
-            <li><input type="radio" name="power" id="filter-socket"><label for="filter-socket">сетевые</label></li>
+            <li>
+              <label class="login-radio">
+                <input type="radio" checked name="power">
+                <span class="radio-indicator"></span> аккумуляторные
+              </label>
+            </li>
+            <li>
+              <label class="login-radio">
+                <input type="radio" checked name="power">
+                <span class="radio-indicator"></span> сетевые
+              </label>
+            </li>
           </ul>
         </fieldset>
         <button type="button">показать</button>
