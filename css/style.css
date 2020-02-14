@@ -53,13 +53,12 @@ body {
 }
 
 .search-style {
-
   margin: 0;
 }
 
 .header-up input {
-  outline: none;
   border: 0;
+  outline: none;
   background-color: #293449;
 }
 
@@ -181,9 +180,9 @@ body {
 }
 
 .description {
+  margin-right: 73px;
   padding-top: 33px;
   padding-left: 52px;
-  margin-right: 73px;
   font-size: 16px;
   font-style: italic;
   line-height: 1.44;
@@ -223,11 +222,11 @@ body {
   padding-bottom: 11px;
   padding-left: 22px;
   padding-right: 25px;
+  border: none;
   text-decoration: none;
   font-size: 21px;
   line-height: 1;
   color: #000000;
-  border: none;
   background-color: #ffffff;
 }
 
@@ -293,10 +292,6 @@ body {
 
 .nav li:active {
   background-color: #1d2739;
-}
-
-main {
-  margin-bottom: 84px;
 }
 
 .nav-item {
@@ -495,6 +490,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: -12px;
   margin-bottom: 21px;
   background-color: #f9f5f0;
 }
@@ -539,9 +535,9 @@ main {
 .products li {
   position: relative;
   width: 220px;
+  margin-bottom: 20px;
   border: solid 1px #eaeaea;
   list-style: none;
-
 }
 
 .products li:hover .buy {
@@ -555,7 +551,7 @@ main {
 .products img {
   max-width: 100%;
   height: 168px;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .products a {
@@ -642,8 +638,7 @@ main {
 }
 
 .price-old {
-  margin-top: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   text-decoration: line-through;
   color: #a9a9a9;
 }
@@ -671,7 +666,7 @@ main {
   border-left-color: #ee3643;
 }
 
-.item-flag h3 {
+.products .non-old {
   margin-bottom: 43px;
 }
 
@@ -679,10 +674,8 @@ main {
   position: absolute;
   top: -1px;
   right: -1px;
-
   width: 60px;
   height: 60px;
-
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
@@ -690,6 +683,11 @@ main {
 
 .flag-new {
   background: url("../img/new-flag.png") no-repeat 0 0;
+}
+
+.flag-item {
+  top: 0px;
+  right: 0px;
 }
 
 .list-producer {
@@ -738,6 +736,7 @@ main {
 .info-company {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 83px;
 }
 
 .services h2 {
@@ -1052,7 +1051,6 @@ footer li {
   background-color: #ee3643;
 }
 
-
 .mail-dev {
   display: flex;
   justify-content: space-between;
@@ -1067,7 +1065,6 @@ footer li {
   width: 100px;
   margin-right: 10px;
 }
-
 
 .mail,
 .dev {
@@ -1092,17 +1089,20 @@ footer li {
 }
 
 
+
+
 /*------------CATALOG-----------------*/
+
+
+
 
 .contacts-catalog {
   margin-right: 50px;
 }
 
-
 .login-user {
   margin-top: 27px;
 }
-
 
 .user-cabinet {
   position: relative;
@@ -1136,7 +1136,6 @@ footer li {
   right: 7px;
 }
 
-
 .user-menu a {
   display: inline-block;
   padding-top: 8px;
@@ -1155,7 +1154,6 @@ footer li {
   color: rgba(50, 66, 92, 0.3);
 }
 
-
 .breadcrumbs {
   display: flex;
   margin-top: -39px;
@@ -1168,12 +1166,11 @@ footer li {
   list-style: none;
 }
 
-
 .breadcrumbs a {
-  text-decoration: none;
   font-family: 'PT Sans', Arial, sans-serif;
   font-weight: normal;
   font-size: 13px;
+  text-decoration: none;
   line-height: 1.38;
   text-transform: uppercase;
   color: #000000;
@@ -1299,6 +1296,7 @@ fieldset {
   display: flex;
   justify-content: ;
   background-color: #f7f3ec;
+  margin-bottom: 20px;
 }
 
 .sort p {
@@ -1334,6 +1332,9 @@ fieldset {
   padding-right: 65px;
 }
 
+.sort-nav li:last-child {
+  padding-right: 45px;
+}
 
 .sort-nav a {
   border-bottom: 1px dashed #ee3643;
@@ -1350,19 +1351,31 @@ fieldset {
   color: #000000;
 }
 
-.arrow-up {	
-	border: 8px solid white;
-    border-bottom-color: #ee3643;
+.arrow-up {
+  margin-top: 10px;
+  margin-right: 22px;
 }
 
+.arrow-up::before {
+  content: url("../img/icon-up-dir.svg");
+}
+
+.arrow-down {
+  margin-top: 10px;
+}
+
+.arrow-down::before {
+  content: url("../img/icon-down-dir.svg");
+}
 
 .pages {
   display: flex;
+  margin-top: 25px;
+  padding: 0;
 }
 
-.pages li {
-  border: solid 1px #e5e5e5;
-  list-style: none;
+.pages .next-page {
+  padding: 8px 31px 10px 31px;
 }
 
 .pages a {
@@ -1377,18 +1390,37 @@ fieldset {
 
 .pages li:hover {
   border: solid 1px #bdc6ca;
-  ;
 }
 
 .pages li:active {
   border: solid 1px #ee3643;
 }
 
+.active-page {
+  background-color: #ee3643;
+}
+
+.active-page a {
+  color: #ffffff;
+}
+
+.pages li {
+  padding: 8px 14px 10px 16px;
+  margin-right: 9px;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
+  list-style: none;
+}
+
 .about-item {
+  min-height: 261px;
+  margin-top: 44px;
+  margin-bottom: 0;
   background-color: #f4f7f9;
 }
 
 .about-item h2 {
+  padding-top: 63px;
   font-size: 30px;
   font-weight: normal;
   line-height: 1;
@@ -1396,7 +1428,10 @@ fieldset {
 }
 
 .about-item p {
+  width: 911px;
+  padding-bottom: 70px;
   font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: normal;
   font-size: 13px;
   line-height: 1.85;
 }
