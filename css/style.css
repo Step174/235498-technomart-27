@@ -1083,12 +1083,6 @@ footer li {
   color: #ee3643;
 }
 
-.modal-content,
-.modal-basket {
-  display: none;
-}
-
-
 
 
 /*------------CATALOG-----------------*/
@@ -1530,4 +1524,92 @@ fieldset {
   border-radius: 100%;
   border: 2px solid #c5c5c5;
   background-color: #c5c5c5;
+}
+
+
+/*-------------------MODAL----------------------------*/
+
+.modal-content,
+.modal-basket {
+  display: ;
+}
+
+
+.modal-content {
+	position: relative;
+  display: block;
+  width: 620px;
+  min-height: 430px;
+  margin: 0 auto;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 20px;
+  height: 20px;
+  font-size: 0;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modal-content-close::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  transform: rotate(-45deg);
+  width: 20px;
+  height: 5px;
+  background: #ee3643;
+  border: none;
+}
+
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 0px;
+  transform: rotate(45deg);
+  width: 20px;
+  height: 5px;
+  background: #ee3643;
+  border: none;
+}
+
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.modal-container {
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.modal-user,
+.modal-password {
+	display: inline-block;
+}
+
+
+.modal-comment {
+	margin: 0 auto;
+}
+
+.btn-background {
+  padding: 37px 0;
+  background-color: #f4f4f4;
+}
+
+.btn-modal {
+  margin: 0 auto;
+  padding: 13px 199px;
+  border: none;
 }
