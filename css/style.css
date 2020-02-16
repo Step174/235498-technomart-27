@@ -141,6 +141,10 @@ body {
   padding-right: 8px;
 }
 
+.cart-catalog {
+	background-color: #ee3643;
+}
+
 .bookmark-head {
   padding-right: 6px;
 }
@@ -1536,25 +1540,55 @@ fieldset {
 
 
 .modal-content {
-	position: relative;
-  display: block;
+  display: none;
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 620px;
-  min-height: 430px;
   margin: 0 auto;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.modal-content label,
+.modal-content label,
+.modal-comment label {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.modal-content input,
+.modal-content input {
+  margin-top: 10px;
+}
+
+.modal-content input[type=text],
+.modal-content input[type=password] {
+  width: 200px;
+  padding: 10px 0px 10px 16px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  vertical-align: middle;
+  color: #999;
+  background: #ffffff;
+  border: 2px solid #dee3e4;
+  border-radius: 5px;
 }
 
 .modal-content-close {
   position: absolute;
-  top: 5px;
+  top: 11px;
   right: 5px;
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
   font-size: 0;
   border: none;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
+  outline: none;
 }
 
 .modal-content-close::before {
@@ -1563,8 +1597,8 @@ fieldset {
   top: 5px;
   right: 0px;
   transform: rotate(-45deg);
-  width: 20px;
-  height: 5px;
+  width: 27px;
+  height: 4px;
   background: #ee3643;
   border: none;
 }
@@ -1575,33 +1609,63 @@ fieldset {
   top: 5px;
   right: 0px;
   transform: rotate(45deg);
-  width: 20px;
-  height: 5px;
+  width: 27px;
+  height: 4px;
   background: #ee3643;
   border: none;
 }
 
 
+.modal-content-close:hover::before,
+.modal-content-close:hover::after {
+	background: #ca2c37;
+}
+
+.modal-content-close:active::before,
+.modal-content-close:active::after {
+	background: #ba2732;
+}
+
+
 .feedback-form {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal-container {
-	margin: 0 auto;
-	margin-top: 40px;
-	margin-bottom: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .modal-user,
 .modal-password {
-	display: inline-block;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.modal-password {
+  margin-left: 17px;
 }
 
 
 .modal-comment {
-	margin: 0 auto;
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
+
+.modal-comment textarea {
+  width: 445px;
+  min-height: 104px;
+  margin-top: 10px;
+  padding: 5px 0 0 12px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  color: #a9a9a9;
+  border: 2px solid #dee3e4;
+  border-radius: 5px;
+}
+
 
 .btn-background {
   padding: 37px 0;
@@ -1610,6 +1674,93 @@ fieldset {
 
 .btn-modal {
   margin: 0 auto;
-  padding: 13px 199px;
+  padding: 11px 199px;
   border: none;
+}
+
+
+/*-------------------MAP------------------------*/
+
+.popup-map {
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 940px;
+  height: 446px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.map-close {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+
+
+/*-------------------BASKET------------------------*/
+
+
+.modal-basket {
+	display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 620px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  background-color: #ffffff;
+  z-index: 999;
+}
+
+.modal-basket h2 {
+  padding-top: 40px;
+  padding-bottom: 42px;
+  padding-left: 55px;
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+.modal-basket h2::before {
+  position: absolute;
+  content: url(../img/modal-check.svg);
+  top: 47px;
+  left: 82px;
+}
+
+.basket-container {
+  padding: 37px 0;
+  background-color: #f4f4f4;
+}
+
+.btn-basket,
+.btn-basket-next {
+  display: inline-block;
+  width: 220px;
+}
+
+.btn-basket {
+  margin-left: 80px;
+}
+
+.btn-basket-next {
+  margin-left: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-basket-next:hover {
+  opacity: 0.7;
+  background-color: #ffffff;
+}
+
+.btn-basket-next:active {
+  outline: 1px solid #ee3643;
+  background-color: #ffffff;
 }

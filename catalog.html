@@ -21,7 +21,7 @@
         </form>
         <ul class="main-user">
           <li class="bookmark-head"><a href="">Закладки: 0</a></li>
-          <li class="cart"><a href="">Корзина: 0</a></li>
+          <li class="cart cart-catalog"><a href="">Корзина: 10</a></li>
           <li><a class="checkout" href="">Оформить заказ</a></li>
         </ul>
       </div>
@@ -307,10 +307,12 @@
     </div>
   </footer>
   <div class="modal-basket">
-    <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+    <button class="modal-content-close close-basket" type="button" title="Закрыть">Закрыть</button>
     <h2>Товар добавлен в корзину!</h2>
-    <a href="">Оформить заказ</a>
-    <button>Продолжить покупки</button>
+    <div class="basket-container">
+      <a class="btn btn-basket" href="">Оформить заказ</a>
+      <button class="btn btn-basket-next">Продолжить покупки</button>
+    </div>
   </div>
 </body>
 
