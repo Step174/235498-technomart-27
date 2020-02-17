@@ -10,10 +10,10 @@
 </head>
 
 <body>
-  <header class="head">
-    <div class="header-up ">
+  <header class="head head-catalog">
+    <div class="header-up">
       <div class="header-up-container wrapper">
-        <a>
+        <a href="index.html">
           <img class="logo logo-head" src="img/logo.svg" width="110" height="18" alt="логотип техномарта">
         </a>
         <form class="search-style">
@@ -74,43 +74,51 @@
         <fieldset class="manufacturer">
           <legend>производители:</legend>
           <ul>
-            <li><label class="login-checkbox">
-                <input type="checkbox" name="black" checked>
-                <span class="checkbox-indicator"></span> bosch
-              </label></li>
-            <li><label class="login-checkbox">
-                <input type="checkbox" name="black" checked>
-                <span class="checkbox-indicator"></span> интерскол
-              </label></li>
-            <li><label class="login-checkbox">
-                <input type="checkbox" name="black" checked>
-                <span class="checkbox-indicator"></span> makita
-              </label></li>
-            <li><label class="login-checkbox">
-                <input type="checkbox" name="black" checked>
-                <span class="checkbox-indicator"></span> dewalt
-              </label></li>
-            <li><label class="login-checkbox">
-                <input type="checkbox" name="black" checked>
-                <span class="checkbox-indicator"></span> hitachi
-              </label></li>
+
+
+<li>
+  <input type="checkbox" name="firm1" id="ch1" value="Bosch" checked>
+     <label for="ch1">bosch</label>
+</li>
+
+
+<li>
+  <input type="checkbox" name="firm2" id="ch2" value="Bosch">
+     <label for="ch2">интерскол</label>
+</li>
+
+            <li>
+  <input type="checkbox" name="firm3" id="ch3" value="Bosch" checked>
+     <label for="ch3">makita</label>
+</li>
+            <li>
+  <input type="checkbox" name="firm4" id="ch4" value="Bosch">
+     <label for="ch4">dewalt</label>
+</li>
+            <li>
+  <input type="checkbox" name="firm5" id="ch5" value="Bosch">
+     <label for="ch5">hitachi</label>
+</li>
           </ul>
+
         </fieldset>
+
         <fieldset class="power">
           <legend>питание:</legend>
+
           <ul>
+
             <li>
-              <label class="login-radio">
-                <input type="radio" checked name="power">
-                <span class="radio-indicator"></span> аккумуляторные
-              </label>
+              <input type="radio" name="power" id="rd1">
+              <label class="login-radio" for=rd1>аккумуляторные</label>
             </li>
+
+
             <li>
-              <label class="login-radio">
-                <input type="radio" checked name="power">
-                <span class="radio-indicator"></span> сетевые
-              </label>
+            <input type="radio" name="power" id="rd2">
+              <label class="login-radio" for=rd2>сетевые</label>
             </li>
+
           </ul>
         </fieldset>
         <button type="button">показать</button>
@@ -123,8 +131,8 @@
             <li><a href="">по типу</a></li>
             <li><a href="">по функционалу</a></li>
           </ul>
-          <a href="" class="arrow-up"></a>
-          <a href="" class="arrow-down"></a>
+          <a href="" class="arrow-up">по возрастанию</a>
+          <a href="" class="arrow-down">по убыванию</a>
         </div>
         <section class="products">
           <ul>
@@ -272,11 +280,9 @@
         </ul>
       </div>
       <div class="footer-center wrapper">
-        <div class="adress">
-          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-          </p>
+          <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           <a href="tel:+78125550555">+7 (812) 555-05-55</a>
-        </div>
+          </p>
         <ul class="footer-nav-center">
           <li><a href="">Материалы</a></li>
           <li><a href="">Техника</a></li>

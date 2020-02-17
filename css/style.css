@@ -88,11 +88,11 @@ body {
 }
 
 .search-style:before {
-  content: url(../img/icon-search.svg);
+  content: url(../img/icon-search.png);
   position: absolute;
   top: 50%;
   left: 18px;
-  margin-top: -10px;
+  transform: translateY(-50%);
 }
 
 .header-up input::placeholder {
@@ -102,12 +102,12 @@ body {
 
 .main-user {
   display: flex;
-  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .main-user li {
+  vertical-align: middle;
   list-style: none;
 }
 
@@ -142,26 +142,27 @@ body {
 }
 
 .cart-catalog {
-	background-color: #ee3643;
+  background-color: #ee3643;
 }
 
 .bookmark-head {
   padding-right: 6px;
 }
 
+
 .bookmark-head::before {
-  content: url(../img/icon-bookmark.svg);
+  content: url(../img/icon-bookmark.png);
   position: absolute;
   top: 10px;
   left: 24px;
 }
 
 .cart::before {
-  content: url(../img/cart-icon.svg);
+  content: url(../img/cart-icon.png);
   position: absolute;
   top: 50%;
   left: 18px;
-  margin-top: -10px;
+  transform: translateY(-50%);
 }
 
 .checkout {
@@ -253,7 +254,7 @@ body {
   position: absolute;
   top: 50%;
   left: 14px;
-  margin-top: -9px;
+  transform: translateY(-50%);
 }
 
 
@@ -301,7 +302,7 @@ body {
 .nav-item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 53px;
 }
 
 .nav-item-left {
@@ -347,6 +348,7 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+  border-radius: 3px;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -361,6 +363,10 @@ body {
 .offer-materials,
 .offer-delivery {
   background-color: #ffbf47;
+}
+
+.offer-delivery {
+  margin-bottom: 0;
 }
 
 .offer-materials::after {
@@ -449,14 +455,14 @@ body {
   position: absolute;
   top: 50%;
   right: 20px;
-  margin-top: -20px;
+  transform: translateY(-50%);
 }
 
 .arrow-left {
   position: absolute;
   top: 50%;
   left: 25px;
-  margin-top: -20px;
+  transform: translateY(-50%);
 }
 
 .arrow-left::before {
@@ -494,7 +500,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -12px;
   margin-bottom: 21px;
   background-color: #f9f5f0;
 }
@@ -520,12 +525,11 @@ body {
 
 .btn-item {
   width: 253px;
-  margin-top: -4px;
   margin-right: 24px;
 }
 
 .products {
-  margin-bottom: 21px;
+  margin-bottom: 0px;
 }
 
 .products ul {
@@ -578,7 +582,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 218px;
+  width: 100%;
   height: 88px;
   padding: 40px 0;
   background-color: rgba(255, 255, 255, 0.9);
@@ -599,7 +603,7 @@ body {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", sans-serif;
+  font-family: "Cuprum", Arial, sans-serif;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
@@ -718,16 +722,23 @@ body {
   box-shadow: 0 10px 25px rgba(41, 52, 73, .5);
 }
 
+.list-producer a {
+  position: absolute;
+  width: 218px;
+  height: 143px;
+  margin-bottom: 20px;
+}
+
 .list-producer img {
   position: relative;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translateX(-50%) translateY(-50%);
 }
 
 .services {
   background-color: #f4f7f9;
-  margin-bottom: 82px;
+  margin-bottom: 75px;
 }
 
 .services-background {
@@ -740,7 +751,7 @@ body {
 .info-company {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 83px;
+  margin-bottom: 84px;
 }
 
 .services h2 {
@@ -772,7 +783,6 @@ body {
 }
 
 .services-list {
-  display: inline-block;
   position: relative;
   margin-top: 68px;
   padding-left: 0;
@@ -833,7 +843,7 @@ body {
 .about h2,
 .contacts-map h2 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .about p {
@@ -846,9 +856,12 @@ body {
   line-height: 1.85;
 }
 
+.about .about-marg {
+  margin-bottom: 20px;
+}
+
 .about ul {
   margin: 0;
-  margin-top: -5px;
   margin-bottom: 40px;
   padding: 0;
 }
@@ -902,6 +915,10 @@ body {
   background-color: #32425c;
 }
 
+.footer-up {
+  margin-bottom: 8px;
+}
+
 footer li {
   list-style: none;
 }
@@ -944,11 +961,10 @@ footer li {
 }
 
 .footer-center {
-  margin-bottom: 51px;
+  margin-bottom: 32px;
 }
 
 .adress {
-  margin-top: 6px;
   margin-left: 2px;
 }
 
@@ -966,7 +982,6 @@ footer li {
 }
 
 .footer-nav-center {
-  margin-top: 23px;
   margin-left: 50px;
 }
 
@@ -1008,7 +1023,6 @@ footer li {
 
 .footer-nav-down {
   margin: 0;
-  margin-top: -5px;
   padding: 0;
 }
 
@@ -1022,6 +1036,7 @@ footer li {
   margin-right: 3px;
   padding: 0;
   border-radius: 50px;
+  vertical-align: middle;
   font-size: 0;
   background-color: #212a3a;
 }
@@ -1032,7 +1047,7 @@ footer li {
   position: absolute;
   top: 50%;
   left: 6px;
-  margin-top: -7px;
+  transform: translateY(-50%);
 }
 
 .fb::before {
@@ -1040,7 +1055,7 @@ footer li {
   position: absolute;
   top: 50%;
   left: 14px;
-  margin-top: -11px;
+  transform: translateY(-50%);
 }
 
 .inst::before {
@@ -1048,7 +1063,7 @@ footer li {
   position: absolute;
   top: 50%;
   left: 11px;
-  margin-top: -9px;
+  transform: translateY(-50%);
 }
 
 .footer-nav-down a:hover {
@@ -1092,7 +1107,9 @@ footer li {
 /*------------CATALOG-----------------*/
 
 
-
+.head-catalog {
+	margin-bottom: 20px;
+}
 
 .contacts-catalog {
   margin-right: 50px;
@@ -1121,14 +1138,14 @@ footer li {
 }
 
 .login-user .user-cabinet::before {
-  content: url(../img/icon-user.svg);
+  content: url(../img/icon-user.png);
   position: absolute;
   top: 12px;
   left: 15px;
 }
 
 .login-user .user-cabinet::after {
-  content: url(../img/icon-logout.svg);
+  content: url(../img/icon-logout.png);
   position: absolute;
   top: 15px;
   right: 7px;
@@ -1141,6 +1158,7 @@ footer li {
   padding-right: 10px;
   font-size: 16px;
   line-height: 1.13;
+  vertical-align: middle;
   color: #32425c;
 }
 
@@ -1154,7 +1172,6 @@ footer li {
 
 .breadcrumbs {
   display: flex;
-  margin-top: -39px;
   margin-bottom: 22px;
   padding: 0;
 }
@@ -1364,20 +1381,22 @@ fieldset {
 }
 
 .arrow-up {
-  margin-top: 10px;
+  margin-top: 13px;
   margin-right: 22px;
+  font-size: 0;
 }
 
 .arrow-up::before {
-  content: url("../img/icon-up-dir.svg");
+  content: url("../img/icon-up-dir.png");
 }
 
 .arrow-down {
-  margin-top: 10px;
+  margin-top: 13px;
+  font-size: 0;
 }
 
 .arrow-down::before {
-  content: url("../img/icon-down-dir.svg");
+  content: url("../img/icon-down-dir.png");
 }
 
 .pages {
@@ -1456,7 +1475,8 @@ fieldset {
   display: none;
 }
 
-.login-checkbox {
+.manufacturer label {
+  position: relative;
   position: relative;
   padding-top: 2px;
   padding-left: 34px;
@@ -1464,87 +1484,75 @@ fieldset {
   cursor: pointer;
 }
 
-.login-checkbox:hover {
-  color: #663d15;
-}
 
-.login-checkbox input[type="checkbox"]+.checkbox-indicator {
-  content: '';
+.manufacturer input[type=checkbox]+label::before {
+  content: url(../img/checkbox-off.png);
   position: absolute;
   width: 26px;
   height: 26px;
-  top: 0px;
+  top: 0;
   left: 0;
-  background: url(../img/checkbox-off.png) no-repeat;
 }
 
-.login-checkbox input[type="checkbox"]:checked+.checkbox-indicator::after {
-  content: '';
+.manufacturer input[type=checkbox]:checked+label::after {
+  content: url(../img/checkbox-on.png);
   position: absolute;
   width: 26px;
   height: 26px;
-  top: 0px;
+  top: 0;
   left: 0;
-  background: url(../img/checkbox-on.png) no-repeat;
 }
 
 
 /*-------------------RADIOBUTTON----------------------------*/
 
 
-.login-radio input[type="radio"] {
+.power input[type="radio"] {
   display: none;
 }
 
-.login-radio {
+.power input[type=radio]+label {
   position: relative;
+  display: block;
+  margin-bottom: 20px;
   padding-left: 34px;
-  vertical-align: middle;
-  cursor: pointer;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
 }
 
-.login-radio:hover {
-  color: #663d15;
-}
 
-.login-radio input[type="radio"]+.radio-indicator {
+.power input[type=radio]+label::before {
+  content: url(../img/radio-off.png);
   position: absolute;
-  top: -3px;
+  width: 26px;
+  height: 26px;
+  top: 0;
   left: 0;
-  width: 18px;
-  height: 18px;
-  border-radius: 100px;
-  border: 4px solid #c5c5c5;
 }
 
-
-.login-radio input[type="radio"]:checked+.radio-indicator::before {
-  content: "";
+.power input[type=radio]:checked+label::after {
+  content: url(../img/radio-on.png);
   position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 5px;
-  height: 5px;
-  border-radius: 100%;
-  border: 2px solid #c5c5c5;
-  background-color: #c5c5c5;
+  width: 26px;
+  height: 26px;
+  top: 0;
+  left: 0;
 }
-
 
 /*-------------------MODAL----------------------------*/
-
-.modal-content,
-.modal-basket {
-  display: ;
-}
 
 
 .modal-content {
   display: none;
   position: fixed;
-  top: 5%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 620px;
   margin: 0 auto;
   border-top: 7px solid #ee3643;
@@ -1591,8 +1599,9 @@ fieldset {
   outline: none;
 }
 
-.modal-content-close::before {
-  content: "";
+.modal-content-close::before,
+.modal-content-close::after {
+	content: "";
   position: absolute;
   top: 5px;
   right: 0px;
@@ -1603,27 +1612,20 @@ fieldset {
   border: none;
 }
 
+
 .modal-content-close::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  right: 0px;
   transform: rotate(45deg);
-  width: 27px;
-  height: 4px;
-  background: #ee3643;
-  border: none;
 }
 
 
 .modal-content-close:hover::before,
 .modal-content-close:hover::after {
-	background: #ca2c37;
+  background: #ca2c37;
 }
 
 .modal-content-close:active::before,
 .modal-content-close:active::after {
-	background: #ba2732;
+  background: #ba2732;
 }
 
 
@@ -1684,12 +1686,13 @@ fieldset {
 .popup-map {
   display: none;
   position: fixed;
-  top: 20%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 940px;
   height: 446px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 999;
 }
 
 .map-close {
@@ -1702,11 +1705,11 @@ fieldset {
 
 
 .modal-basket {
-	display: none;
+  display: none;
   position: fixed;
-  top: 40%;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 620px;
   border-top: 7px solid #ee3643;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
