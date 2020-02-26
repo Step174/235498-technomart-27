@@ -88,7 +88,7 @@ body {
   background-color: #212a3a;
 }
 
-.search-style input:hover .search-style svg {
+.search-style input:hover +svg {
   opacity: 1;
 }
 
@@ -100,10 +100,14 @@ body {
   color: black;
 }
 
-.search-style input:focus .search-style path {
-  fill: #ee3643;
+.search-style input:focus +svg {
+  opacity: 1;
 }
 
+
+.search-style input:focus +svg path {
+  fill: #ee3643;
+}
 
 
 .main-user {
