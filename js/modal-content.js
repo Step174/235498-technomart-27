@@ -40,7 +40,9 @@ close.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
   if (!login.value || !password.value) {
     evt.preventDefault();
-    console.log("Введи пароль и логин");
+    modal.classList.add("error");
+    modal.offsetWidth = modal.offsetWidth;
+    modal.classList.remove("error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
@@ -54,6 +56,7 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (modal.classList.contains("modal-show")) {
       modal.classList.remove("modal-show");
+      modal.classList.remove("modal-error");
     }
   }
 })
