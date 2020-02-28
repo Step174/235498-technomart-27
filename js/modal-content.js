@@ -34,15 +34,16 @@ link.addEventListener("click", function(evt) {
 close.addEventListener("click", function(evt) {
   evt.preventDefault();
   modal.classList.remove("modal-show");
+  modal.classList.remove("error");
 });
 
 
 form.addEventListener("submit", function(evt) {
   if (!login.value || !password.value) {
     evt.preventDefault();
-    modal.classList.add("error");
-    modal.offsetWidth = modal.offsetWidth;
     modal.classList.remove("error");
+    modal.offsetWidth = modal.offsetWidth;
+    modal.classList.add("error");
   } else {
     if (isStorageSupport) {
       localStorage.setItem("login", login.value);
@@ -56,7 +57,7 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (modal.classList.contains("modal-show")) {
       modal.classList.remove("modal-show");
-      modal.classList.remove("modal-error");
+      modal.classList.remove("error");
     }
   }
 })
@@ -82,7 +83,3 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 })
-
-
-
-
