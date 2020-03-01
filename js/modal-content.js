@@ -9,6 +9,11 @@ var map = document.querySelector(".popup-map");
 var mapOpen = document.querySelector(".open-map");
 var mapClose = document.querySelector(".map-close");
 
+var basketOpen = document.querySelector(".buy-item");
+var modalBasket = document.querySelector(".modal-basket");
+var basketClose = document.querySelector(".close-basket");
+
+
 var isStorageSupport = true;
 var storage = "";
 
@@ -37,7 +42,6 @@ close.addEventListener("click", function(evt) {
   modal.classList.remove("error");
 });
 
-
 form.addEventListener("submit", function(evt) {
   if (!login.value || !password.value) {
     evt.preventDefault();
@@ -51,7 +55,6 @@ form.addEventListener("submit", function(evt) {
   }
 });
 
-
 window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -61,7 +64,6 @@ window.addEventListener("keydown", function(evt) {
     }
   }
 })
-
 
 
 
@@ -80,6 +82,27 @@ window.addEventListener("keydown", function(evt) {
     evt.preventDefault();
     if (map.classList.contains("modal-show")) {
       map.classList.remove("modal-show");
+    }
+  }
+})
+
+
+
+basketOpen.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalBasket.classList.add("modal-show");
+});
+
+basketClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  modalBasket.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function(evt) {
+  if (evt.keyCode === 27) {
+    evt.preventDefault();
+    if (modalBasket.classList.contains("modal-show")) {
+      modalBasket.classList.remove("modal-show");
     }
   }
 })
