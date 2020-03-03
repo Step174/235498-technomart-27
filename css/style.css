@@ -225,14 +225,14 @@ body {
 }
 
 .contacts {
-	width: 270px;
+  width: 270px;
   margin-top: 30px;
   margin-right: 67px;
 }
 
 
 .tel {
-	position: relative;
+  position: relative;
   display: block;
   padding-top: 8px;
   padding-bottom: 9px;
@@ -246,9 +246,9 @@ body {
 }
 
 .tel::before {
-	content: url(../img/icon-phone.svg);
-	position: absolute;
-	left: 10px;
+  content: url(../img/icon-phone.svg);
+  position: absolute;
+  left: 10px;
 }
 
 .contacts p {
@@ -572,7 +572,7 @@ body {
 }
 
 .products {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 .products ul {
@@ -697,7 +697,7 @@ body {
 }
 
 .price-old {
-  margin-bottom: 8px;
+  margin-bottom: 7px;
   text-decoration: line-through;
   color: #a9a9a9;
 }
@@ -706,8 +706,8 @@ body {
   position: relative;
   display: block;
   width: 80px;
-  margin: 10px auto;
-  margin-bottom: 20px;
+  margin: 0 auto;
+  margin-bottom: 19px;
   padding: 10px 30px;
   color: white;
   background: #ee3643;
@@ -805,7 +805,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 84px;
+  margin-bottom: 86px;
 }
 
 .info-company h2 {
@@ -846,7 +846,7 @@ body {
 
 .about ul {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 0;
 }
 
@@ -883,7 +883,7 @@ body {
 
 .open-map {
   display: block;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .footer-up,
@@ -1492,19 +1492,19 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30px;
   padding: 0;
 }
 
 .pages li {
   margin-right: 9px;
-  border: solid 1px #e5e5e5;
-  border-radius: 3px;
   list-style: none;
-  cursor: pointer;
 }
 
 .pages a {
   display: inline-block;
+  border: solid 1px #e5e5e5;
+  border-radius: 3px;
   min-width: 37px;
   padding-top: 9px;
   padding-bottom: 10px;
@@ -1518,27 +1518,25 @@ fieldset {
   color: #000000
 }
 
-.pages .next-page {
+.next-page a {
   padding-left: 30px;
   padding-right: 30px;
 }
 
 
-.pages li:hover {
+.pages a:hover {
   border: solid 1px #bdc6ca;
 }
 
-.pages li:active {
+.pages a:active {
   border: solid 1px #ee3643;
 }
 
-.pages .active-page,
-.pages .active-page:hover {
+
+.active-page a,
+.active-page a:hover {
   background-color: #ee3643;
   border-color: #ee3643;
-}
-
-.active-page a {
   color: #ffffff;
 }
 
@@ -2129,7 +2127,18 @@ fieldset {
 }
 
 .price-controls {
+  position: relative;
   font-size: 0;
+}
+
+.price-controls::before {
+  content: "—";
+  position: absolute;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  top: 7px;
+  left: 104px;
 }
 
 .price-controls label {
@@ -2141,7 +2150,9 @@ fieldset {
 
 .price-controls input {
   width: 80px;
-  padding: 8px 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-size: 17px;
@@ -2151,6 +2162,7 @@ fieldset {
   border-radius: 5px;
   background: #f7f3ec;
 }
+
 
 .max-price {
   text-align: right;
@@ -2165,7 +2177,7 @@ fieldset {
 
 .services {
   background-color: #f4f7f9;
-  margin-bottom: 75px;
+  margin-bottom: 79px;
 }
 
 .services-back-1 {
@@ -2206,7 +2218,7 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 86px;
+  padding-bottom: 69px;
 }
 
 .services h2 {
@@ -2242,7 +2254,7 @@ fieldset {
   display: block;
   width: 217px;
   padding-top: 15px;
-  padding-bottom: 16px;
+  padding-bottom: 17px;
   padding-left: 23px;
   font-size: 21px;
   font-weight: bold;
