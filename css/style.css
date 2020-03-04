@@ -1,8 +1,8 @@
 body {
-  min-width: 1200px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   color: #000000;
 }
 
@@ -618,7 +618,7 @@ body {
 .products h3 {
   width: 160px;
   margin: 0 auto;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
@@ -652,7 +652,7 @@ body {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   line-height: 18px;
   text-align: center;
   text-decoration: none;
@@ -689,7 +689,7 @@ body {
 }
 
 .products p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
@@ -818,7 +818,7 @@ body {
 
 .info-company p {
   margin: 0;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
@@ -832,7 +832,7 @@ body {
 .about p {
   width: 520px;
   margin-bottom: 24px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: normal;
   letter-spacing: normal;
@@ -862,7 +862,7 @@ body {
 }
 
 .about li::before {
-  content: '';
+  content: ";
   position: absolute;
   left: -36px;
   top: 9px;
@@ -901,6 +901,7 @@ body {
   background-color: #32425c;
 }
 
+
 .footer-up {
   margin-bottom: 8px;
 }
@@ -934,6 +935,11 @@ footer li {
   line-height: 1.33;
   color: #f1f5f7;
 }
+
+.footer-nav .footer-nav-contacts {
+  padding-right: 0;
+}
+
 
 .footer-nav a:hover,
 .footer-center a:hover {
@@ -1241,7 +1247,7 @@ footer li {
 
 
 .breadcrumbs a {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   text-decoration: none;
@@ -1288,7 +1294,7 @@ footer li {
   padding-top: 11px;
   padding-bottom: 10px;
   padding-left: 20px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -1316,7 +1322,7 @@ footer li {
 .filter-head,
 .manufacturer legend,
 .power legend {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
@@ -1353,7 +1359,7 @@ fieldset {
 
 .manufacturer label,
 .power label {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
   line-height: 1.33;
   text-transform: uppercase;
@@ -1364,7 +1370,7 @@ fieldset {
   padding-top: 11px;
   padding-bottom: 10px;
   border: solid 1px #e5e5e5;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -1414,7 +1420,7 @@ fieldset {
 }
 
 .sort p {
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -1436,7 +1442,7 @@ fieldset {
 
 .sort-nav a {
   border-bottom: 1px dashed #ee3643;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -1508,7 +1514,7 @@ fieldset {
   min-width: 37px;
   padding-top: 9px;
   padding-bottom: 10px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-align: center;
@@ -1560,7 +1566,7 @@ fieldset {
 .about-item p {
   width: 911px;
   padding-bottom: 70px;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 13px;
   line-height: 1.85;
@@ -1624,7 +1630,7 @@ fieldset {
   display: block;
   margin-bottom: 20px;
   padding-left: 34px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
   font-style: normal;
   font-size: 15px;
   line-height: 20px;
@@ -1699,7 +1705,7 @@ fieldset {
 .modal-content input[type=password] {
   width: 200px;
   padding: 10px 0px 10px 16px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
   font-size: 13px;
   vertical-align: middle;
   color: #999;
@@ -1776,6 +1782,7 @@ fieldset {
   display: inline-block;
   width: 220px;
   margin-top: 5px;
+  vertical-align: middle;
 }
 
 .modal-password {
@@ -1794,7 +1801,7 @@ fieldset {
   min-height: 104px;
   margin-top: 10px;
   padding: 5px 0 0 12px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
   font-size: 13px;
   color: #a9a9a9;
   border: 2px solid #dee3e4;
@@ -1902,6 +1909,7 @@ fieldset {
 .btn-basket-next {
   display: inline-block;
   width: 220px;
+  vertical-align: middle;
 }
 
 .btn-basket {
@@ -1936,7 +1944,7 @@ fieldset {
   position: relative;
 }
 
-.slider input[type='radio'] {
+.slider input[type="radio"] {
   display: none;
 }
 
@@ -2074,7 +2082,7 @@ fieldset {
 
 .filter-item legend {
   margin-bottom: 12px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.76;
@@ -2097,11 +2105,16 @@ fieldset {
   background: #d7dcde;
 }
 
+
+
 .range-controls .bar {
-  width: 70%;
+  width: 80%;
   height: 2px;
   background: #00ca74;
 }
+
+
+
 
 .range-controls .toggle {
   position: absolute;
@@ -2134,7 +2147,7 @@ fieldset {
 .price-controls::before {
   content: "—";
   position: absolute;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   top: 7px;
@@ -2145,6 +2158,7 @@ fieldset {
   display: inline-block;
   width: 50%;
   font-size: 16px;
+  vertical-align: middle;
   text-transform: uppercase;
 }
 
@@ -2153,7 +2167,7 @@ fieldset {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 18px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans",  "Arial", sans-serif;
   font-style: normal;
   font-size: 17px;
   text-align: center;
@@ -2234,7 +2248,7 @@ fieldset {
 
 .services p {
   margin: 0;
-  font-family: 'PT Sans', Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
