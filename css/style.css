@@ -1186,6 +1186,8 @@ footer li {
 }
 
 .user-cabinet .user-name {
+  display: inline-block;
+  max-width: 230px;
   position: relative;
   padding-left: 45px;
   text-decoration: none;
